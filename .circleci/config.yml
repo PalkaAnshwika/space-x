@@ -4,9 +4,11 @@ version: 2.1
 
 jobs:
   test:
-   - run:
-        name: Install
-        command: yarn install
+    steps:
+      - checkout
+#    - run:
+#         name: Install
+#         command: yarn install
         
 workflows:
   push:
