@@ -4,4 +4,4 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - react/install
+      - node/test
