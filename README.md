@@ -20,7 +20,7 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ### Build
-It has circleCI implementation.
+It has circleCI implementation with basic build concept.
 
 Filter functionality of the sapceX programs works fine with the toggle behavior of buttons.
 APIs are called based on the filter criteria.
