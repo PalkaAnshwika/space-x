@@ -62,12 +62,12 @@ const LaunchFilter = ({filterLaunchYear, filterSuccessfulLaunch, filterSuccessfu
     const [isLaunchFailure, setIsLaunchFailure] = useState(false);
     const [isLandSuccess, setIsLandSuccess] = useState(false);
     const [isLandFailure, setIsLandFailure] = useState(false);
-    const [isYearSelected, setIsYearSelected] = useState(false);
+    const [isYearSelected, setIsYearSelected] = useState();
     const Start_year = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020];
 
-    const filterByLaunchYear = (e) => {
-        setIsYearSelected(!isYearSelected);
-        if(!isYearSelected) {
+   const filterByLaunchYear = (e) => {
+        setIsYearSelected(e.target.value);
+        if(isYearSelected !== e.target.value) {
             filterLaunchYear(e.target.value);
         } else {
             filterLaunchYear('');
