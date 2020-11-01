@@ -20,9 +20,8 @@ version: 2.1
 # Define the jobs we want to run for this project
 jobs:
   build:
-    machine:
-      image: windows-default # Windows machine image
-    resource_class: windows.medium
+   docker:
+      - image: circleci/node:10.15.3-browsers
     steps:
       - checkout
       - run: echo "this is the build job"
