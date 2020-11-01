@@ -20,6 +20,9 @@ version: 2.1
 # Define the jobs we want to run for this project
 jobs:
   build:
+    executor:
+      name: win/default 
+      size: "medium"
     steps:
       - checkout
       - run: echo "this is the build job"
