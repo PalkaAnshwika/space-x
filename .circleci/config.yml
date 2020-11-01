@@ -18,10 +18,14 @@
 version: 2.1
 
 # Define the jobs we want to run for this project
+orbs:
+  win: circleci/windows@2.2.0 # The Windows orb give you everything you need to start using the Windows executor.
+
 jobs:
-  build:
-   machine:
-      image: ubuntu-2004:202010-01
+  build: # name of your job
+    executor:
+      name: win/default # executor type
+      size: "medium"
     steps:
       - checkout
       - run: echo "this is the build job"
