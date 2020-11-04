@@ -25,7 +25,7 @@ It has circleCI implementation with basic build concept.
 Filter functionality of the sapceX programs works fine with the toggle behavior of buttons.
 APIs are called based on the filter criteria.
 
-Desktop version works as per the requirement except for the css styling of buttons.
+Responsiveness also works as expected.
 
 ### Extra Functionality - 
 Added a spinner when the API gets called.
