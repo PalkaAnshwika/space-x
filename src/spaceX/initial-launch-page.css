@@ -1,0 +1,81 @@
+.imageWidth {
+    width: 160px;
+    background-color: #f3f3f3;
+    margin-top: 0.5em;
+}
+
+.textStyleInitialLaunch {
+    color: darkblue;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 1.2em;
+}
+
+.missionIdTextStyleIL {
+    color: black;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 1.2em;
+}
+
+.missionIdValueIL {
+    font-weight: 400;
+    color: darkblue;
+}
+
+.componentStyle {
+    background-color: white;
+    width: 23.5%;
+    margin-left: 6px;
+    margin-bottom: 6px;
+}
+
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    .componentStyle {
+        background-color: white;
+        width: 47.5%;
+        margin-left: 6px;
+        margin-bottom: 6px;
+
+    }
+    .imageWidth {
+        width: 215px;
+        background-color: #f3f3f3;
+        margin-top: 0.5em;
+
+    }
+}
+
+@media (max-width: 699px) {
+
+    .missionIdTextStyleIL {
+        color: black;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 1.2em;
+    }
+
+    .textStyleInitialLaunch {
+        color: darkblue;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 1.2em;
+
+    }
+    .imageWidth {
+        width: 89%;
+        background-color: #f3f3f3;
+        margin-top: 1em;
+    }
+    .componentStyle {
+        background-color: white;
+        margin-left: 15px;
+        margin-top: 1em;
+        width: 92%;
+    }
+}
